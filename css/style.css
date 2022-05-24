@@ -332,14 +332,16 @@ margin-top: 40px;
 animation: slideInFromTop 1s ease-in;
    }  
 
-   .showcase-form{ 
-animation: slideInFromBottom  1s ease-in;
-    }
-
-   .cli .grid img{ 
-grid-column: 1; 
-grid-row: 1;
-   } 
+   .showcase-form{  
+justify-self: center;
+animation: slideInFromBottom  1s ease-in; 
+margin: auto;
+    } 
+    
+   .cli .grid > *:first-child {
+    grid-column: 1;
+    grid-row: 1;
+  }
 
    .features-head,
    .features-sub-head, 
