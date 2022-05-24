@@ -360,20 +360,22 @@ grid-column: 1;
 
    } 
 
-   /* Mobiles */ 
+@media (max-width: 500px) {
+  .navbar {
+    height: 110px;
+  }
 
-   @media (max-width: 500px){ 
-.nav-bar{
-height: 110px;
-    } 
+  .navbar .flex {
+    flex-direction: column;
+  }
 
-.nav-bar .flex{ 
-flex-direction: column;
- }
-
-.nav-bar ul{ 
-padding: 10px; 
-background-color: rgba(0, 0 , 0, 0.1);
- }
-
-     }
+  .navbar ul {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .showcase-form {
+    width: 300px;
+  }
+}
+  
